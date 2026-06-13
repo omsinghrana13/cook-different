@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooking Town | Contact Us</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">Cooking<span>Town.</span></a>
+      
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Shop Menu</a>
+        <a href="articles.html">Articles</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </nav>
+
+      <div id="unauth-buttons" class="auth-group"><button class="btn btn-text" data-login-btn>Log in</button><button class="btn btn-primary" data-signup-btn>Sign up</button></div>
+      <div id="auth-buttons" class="auth-group" style="display: none;"><span id="user-greeting" class="greeting"></span><button class="btn btn-secondary" id="logout-btn">Log out</button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="page-header">
+        <p>Get In Touch</p>
+        <h1>Contact & Reviews</h1>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <div class="info-box">
+            <h3>Visit Our Store</h3>
+            <div class="info-item"><ion-icon name="location-outline"></ion-icon><span>Dori Lal Agarwal Marg, Pilibhit Byepass Road, Bareilly, Uttar Pradesh - 243006</span></div>
+            <div class="info-item"><ion-icon name="call-outline"></ion-icon><span>+91 6306198783</span></div>
+            <div class="info-item"><ion-icon name="mail-outline"></ion-icon><span>omsinghrana697@gmail.com</span></div>
+          </div>
+          <div class="info-box">
+            <h3>Opening Hours</h3>
+            <div class="info-item"><ion-icon name="time-outline"></ion-icon> <span>Monday - Sunday: All Time</span></div>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="margin-bottom: 20px; font-size: 1.5rem;">What Our Customers Say</h3>
+          <div class="testi-card"><img src="avatar-1.jpg" alt="Robert William"><div><h4>Robert William</h4><p>"I would be lost without restaurant. I would like to personally thank you for your outstanding product."</p></div></div>
+          <div class="testi-card"><img src="avatar-2.jpg" alt="Thomas Josef"><div><h4>Thomas Josef</h4><p>"The fastest food home delivery in town. Quality burgers and amazing service every single time."</p></div></div>
+          <div class="testi-card"><img src="avatar-3.jpg" alt="Charles Richard"><div><h4>Charles Richard</h4><p>"Delicious & healthy foods. Great family and kids zone facilities when eating in!"</p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><p>&copy; 2026 Cooking Town. All rights reserved.</p></div></footer>
+
+  <div class="modal-overlay" data-login-modal><div class="modal-card"><button class="close-btn" data-login-close>&times;</button><h2>Welcome Back</h2><form id="login-form"><input type="email" id="login-email" placeholder="Email Address" required class="input-field"><input type="password" id="login-password" placeholder="Password" required class="input-field"><button type="submit" class="btn btn-primary w-100">Log in</button></form><p id="login-error" class="error-msg"></p><p class="switch-text">New here? <a href="#" data-switch-to-signup>Create an account</a></p></div></div>
+  <div class="modal-overlay" data-signup-modal><div class="modal-card"><button class="close-btn" data-signup-close>&times;</button><h2>Join Cooking Town</h2><form id="signup-form"><input type="text" id="signup-name" placeholder="Full Name" required class="input-field"><input type="email" id="signup-email" placeholder="Email Address" required class="input-field"><input type="password" id="signup-password" placeholder="Password (min 6 chars)" required minlength="6" class="input-field"><button type="submit" class="btn btn-primary w-100">Sign up</button></form><p id="signup-error" class="error-msg"></p><p class="switch-text">Already have an account? <a href="#" data-switch-to-login>Log in</a></p></div></div>
+
+  <script src="script.js"></script>
+  <script src="auth.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

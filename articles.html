@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooking Town | Food Reviews & Articles</title>
+  
+  <!-- NEW: Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">Cooking<span>Town.</span></a>
+      
+      <!-- NAVIGATION -->
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Shop Menu</a>
+        <a href="articles.html" class="active">Articles</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <!-- AUTH BUTTONS -->
+      <div id="unauth-buttons" class="auth-group">
+        <button class="btn btn-text" data-login-btn>Log in</button>
+        <button class="btn btn-primary" data-signup-btn>Sign up</button>
+      </div>
+      <div id="auth-buttons" class="auth-group" style="display: none;">
+        <span id="user-greeting" class="greeting"></span>
+        <button class="btn btn-secondary" id="logout-btn">Log out</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="container">
+      <div class="page-header">
+        <p>Culinary Stories</p>
+        <h1>Latest Food Reviews</h1>
+      </div>
+
+      <div class="article-grid">
+        
+        <!-- Article 1 -->
+        <article class="article-card">
+          <img src="blog-1.jpg" alt="Vietnamese Spring Rolls">
+          <div class="article-content">
+            <div class="article-meta">By Maya Sharma • Food Critic</div>
+            <h2 class="article-title">Fresh & Crispy: A Tale of Two Spring Rolls</h2>
+            <p class="article-text">
+              When it comes to Asian cuisine, the true test of a kitchen lies in its ability to balance fresh, vibrant ingredients with savory, comforting depths. This beautiful platter of Vietnamese-style spring rolls absolutely nails that delicate equilibrium. The spread features a gorgeous contrast: on one side, you have the translucent, delicate fresh summer rolls, tightly packed with plump shrimp, crisp carrots, and fresh greens. They are incredibly light and refreshing. On the other side, the golden, deep-fried spring rolls offer a satisfying, shattering crunch with every bite, revealing a warm, savory filling inside. But what truly elevates this dish is the accompanying dipping sauces. The classic sweet chili sauce provides a bright, tangy kick, while the rich, crushed peanut sauce adds a creamy, nutty depth that perfectly coats the fresh rolls. Resting on a bed of vibrant lettuce and fresh herbs, this dish isn't just a meal; it's a masterclass in textural contrast. Whether you are looking for a light afternoon snack or a flavorful appetizer to share in the heart of Lucknow, this duo of rolls delivers a spectacular, authentic taste experience that leaves you craving just one more bite. It is an absolute must-try for any food enthusiast in the city.
+            </p>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-card">
+          <img src="blog-2.jpg" alt="Classic Club Sandwich">
+          <div class="article-content">
+            <div class="article-meta">By Rohan Desai • Local Foodie</div>
+            <h2 class="article-title">The Ultimate Comfort Stack: Classic Club Sandwich</h2>
+            <p class="article-text">
+              There is an undeniable, nostalgic joy that comes from biting into a perfectly constructed club sandwich, and this particular creation is a testament to that classic comfort. Stacked high and cut into the iconic, crustless triangles, this sandwich is a visual and culinary delight. The foundation is laid with thick slices of perfectly toasted, grill-marked bread that offer a sturdy, satisfying crunch without being overly dry. Inside, the layers are meticulously arranged: generous folds of savory, premium ham, melted slices of rich cheese, and the essential crunch of garden-fresh lettuce and juicy tomatoes. The moisture from the tomatoes and a light spread perfectly balances the savory meats and toasted bread. Served on a charming, polka-dotted plate and garnished with bright cherry tomatoes, the presentation is as inviting as the flavors themselves. It is the kind of reliable, deeply satisfying meal that hits the spot whether you are grabbing a quick working lunch or enjoying a lazy weekend brunch. Every single bite delivers a harmonious blend of textures and tastes, proving once again that when you use high-quality, fresh ingredients, the simplest recipes are often the most spectacular. I highly recommend pairing this with a cold iced tea for the ultimate midday treat.
+            </p>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-card">
+          <img src="blog-3.jpg" alt="Grilled Chicken Skewers">
+          <div class="article-content">
+            <div class="article-meta">By Priya Kapoor • Grill Master</div>
+            <h2 class="article-title">Sizzling Perfection: Grilled Chicken Skewers</h2>
+            <p class="article-text">
+              For those who appreciate the smoky, robust flavors of the grill, these sizzling chicken skewers are nothing short of a culinary triumph. Presented beautifully on a sleek, dark slate platter, the vibrant colors of the dish immediately catch the eye. The skewers feature generous, tender chunks of marinated chicken breast, perfectly charred on the edges to provide that quintessential barbecue smokiness while remaining incredibly juicy on the inside. Alternating with the meat are thick cuts of sweet red bell peppers, which have been blistered just enough to release their natural sugars, offering a delightful flavor contrast to the savory chicken. The entire dish is finished with a generous sprinkle of fresh dill and herbs, adding a bright, earthy aroma that cuts through the richness of the meat. Paired with a side of tangy, rich dipping sauce, every bite is a dynamic explosion of Mediterranean-inspired flavors. This dish is a protein-packed powerhouse that does not compromise on taste or presentation. It is an ideal choice for a hearty dinner, offering a flawless balance of smoke, spice, and natural sweetness that will undoubtedly leave you completely satisfied. If you are a barbecue aficionado, this expertly crafted dish deserves a top spot on your dining itinerary.
+            </p>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="article-card">
+          <img src="promo-5.png" alt="Balanced Diet Plate">
+          <div class="article-content">
+            <div class="article-meta">By Dr. Amit Verma • Nutrition Specialist</div>
+            <h2 class="article-title">Deconstructing the Perfect Plate: A Guide to Balanced Eating</h2>
+            <p class="article-text">
+              In today's fast-paced world, finding a meal that is both visually appealing and nutritionally complete can be a challenge, but this masterfully deconstructed balanced diet plate serves as the ultimate blueprint for healthy eating. Taking inspiration from the classic nutritional guidelines, this culinary showcase beautifully divides essential macronutrients into a feast for the eyes and the body. One quadrant is bursting with vibrant, antioxidant-rich fruits and vegetables—ranging from crisp broccoli and zucchini to juicy strawberries, blueberries, and citrus. Opposite this colorful array sits a hearty selection of complex carbohydrates, featuring rustic whole-grain bread and perfectly cooked pasta, designed to provide sustained, long-lasting energy. The final section is dedicated to premium, lean proteins, showcasing high-quality cuts of chicken, fish, and beef. What makes this presentation so compelling is how it demystifies nutrition. It reminds us that eating well does not mean restriction; rather, it is about abundance, color, and proper proportions. This approach to meal preparation ensures that your body receives a diverse spectrum of vitamins and minerals. It is a brilliant, delicious reminder that health and flavor can effortlessly coexist on the very same plate. Embracing this balanced methodology is a guaranteed step toward a more energized and vibrant lifestyle.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Cooking Town. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AUTH MODALS (Required for functionality) -->
+  <div class="modal-overlay" data-login-modal><div class="modal-card"><button class="close-btn" data-login-close>&times;</button><h2>Welcome Back</h2><form id="login-form"><input type="email" id="login-email" placeholder="Email Address" required class="input-field"><input type="password" id="login-password" placeholder="Password" required class="input-field"><button type="submit" class="btn btn-primary w-100">Log in</button></form><p id="login-error" class="error-msg"></p><p class="switch-text">New here? <a href="#" data-switch-to-signup>Create an account</a></p></div></div>
+  <div class="modal-overlay" data-signup-modal><div class="modal-card"><button class="close-btn" data-signup-close>&times;</button><h2>Join Cooking Town</h2><form id="signup-form"><input type="text" id="signup-name" placeholder="Full Name" required class="input-field"><input type="email" id="signup-email" placeholder="Email Address" required class="input-field"><input type="password" id="signup-password" placeholder="Password (min 6 chars)" required minlength="6" class="input-field"><button type="submit" class="btn btn-primary w-100">Sign up</button></form><p id="signup-error" class="error-msg"></p><p class="switch-text">Already have an account? <a href="#" data-switch-to-login>Log in</a></p></div></div>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+  <script src="auth.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "test user",
+    "email": "testemail@email.com",
+    "password": "testpassword",
+    "token": "062b455a540d0b09431b83e29da105be"
+  },
+  {
+    "name": "Om Singh Rana",
+    "email": "omsinghrana697@gmail.com",
+    "password": "newpassword123",
+    "token": "a75f262078661e8941e0548bc64d372d"
+  },
+  {
+    "name": "sheel",
+    "email": "sheel123@gmail.com",
+    "password": "sheel123@gmail.com",
+    "token": "a993427ae1e9bf047fd3472dddbf8750"
+  }
+]
